@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine's Question</title>
+    <style>
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            margin-top: 100px; 
+            background-color: pink;
+        }
+        h1 { color: red; }
+        button { 
+            font-size: 20px; 
+            padding: 10px 20px; 
+            margin: 10px; 
+            cursor: pointer; 
+            border-radius: 10px;
+            border: none;
+        }
+        .yes { background-color: lightgreen; }
+        .no { background-color: lightcoral; }
+    </style>
+</head>
+<body>
+
+    <h1>Hi loveee!! Pogi mo so muchhh. HAPPY HAPPY VALENTINE’S DAY BAYOT 🥹🩷</h1>
+    
+    <button class="yes" onclick="yesResponse()">YES</button>
+    <button class="no" onclick="noResponse()">NO</button>
+
+    <script>
+        function yesResponse() {
+            document.body.innerHTML = `
+                <h1>Eyy kilig ako so muchhh, so.. wanna be my valentino? ey</h1>
+                <button class="yes" onclick="finalYes()">YES OF COURSE SUPER YESSABLEE NAYAN!</button>
+                <button class="no" onclick="noAgain()">DI KA PWEDE MAG NO BUGO KA?</button>
+            `;
+        }
+
+        function noResponse() {
+            document.body.innerHTML = `
+                <h1>ATAY UROY KA, AYAW!</h1>
+            `;
+        }
+
+        function finalYes() {
+            document.body.innerHTML = `
+                <h1>KISS KO LOVELOVE BI</h1>
+                <button class="yes" onclick="mwah()">MWAAAA</button>
+                <button class="no" onclick="patyonTika()">AYG MWA PATYON TIKA!</button>
+            `;
+        }
+
+        function noAgain() {
+            alert("DI KA PWEDE MAG NO BUGO KA?");
+        }
+
+        function mwah() {
+            alert("MWAAAA 💋💖");
+        }
+
+        function patyonTika() {
+            alert("JOKE LANG HAHAHA LOVE YOU! 😘");
+        }
+    </script>
+
+</body>
+</html>
